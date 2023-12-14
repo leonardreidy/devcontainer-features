@@ -1,13 +1,8 @@
 {
-    "color_and_hello": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "yo": {
+        "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
         "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
-            }
+            "yo": {}
         }
     }
 }
