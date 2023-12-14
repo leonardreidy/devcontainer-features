@@ -1,7 +1,7 @@
 {
   "name": "Yo",
   "id": "yo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Feature for scaffolding apps with Yeoman CLI developed by the fine engineers at yeoman.io",
   "options": {},
   "installsAfter": [
