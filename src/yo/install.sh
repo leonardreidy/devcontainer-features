@@ -25,12 +25,13 @@ npm install --global --silent yo
 # Setting uid to 501 here since it's already a random number being thrown around.
 # @see https://github.com/yeoman/yeoman.github.io/issues/282
 # @see https://github.com/cthulhu666/docker-yeoman/blob/master/Dockerfile
-adduser -D -u 501 yeoman && \
+adduser --disabled-password --quiet -u 501 yeoman && \
   echo "yeoman ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # Yeoman needs the use of a home directory for caching and certain config storage.
 export HOME=/home/yeoman
 
+mkdir /home/yeoman && chown yeoman:yeoman /home/yeoman
 mkdir /generated && chown yeoman:yeoman /generated
 
 # Always run as the yeoman user
